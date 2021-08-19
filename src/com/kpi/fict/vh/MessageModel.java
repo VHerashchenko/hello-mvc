@@ -5,6 +5,17 @@ public class MessageModel {
     private String secondInputValue;
     private String finalMessage;
 
+    private static final String firstNeededWord = "Hello";
+    private static final String secondNeededWord = "world!";
+
+    public String getFirstNeededWord() {
+        return firstNeededWord;
+    }
+
+    public String getSecondNeededWord(){
+        return secondNeededWord;
+    }
+
     public void setFirstInputValue(String firstInputValue) {
         this.firstInputValue = firstInputValue;
     }

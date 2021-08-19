@@ -4,10 +4,6 @@ import java.util.Scanner;
 
 public class MessageController {
 
-    private static final String FIRST_NEEDED_WORD = "Hello";
-    private static final String SECOND_NEEDED_WORD = "world!";
-
-
     private final MessageModel messageModel;
     private final View view;
 
@@ -20,10 +16,10 @@ public class MessageController {
         Scanner scanner = new Scanner(System.in);
 
         messageModel.setFirstInputValue(
-                stringValidScanner(scanner, FIRST_NEEDED_WORD, View.WRONG_FIRST_INPUT_DATA));
+                stringValidScanner(scanner, messageModel.getFirstNeededWord(), View.WRONG_FIRST_INPUT_DATA));
 
         messageModel.setSecondInputValue(
-                stringValidScanner(scanner, SECOND_NEEDED_WORD, View.WRONG_SECOND_INPUT_DATA));
+                stringValidScanner(scanner, messageModel.getSecondNeededWord(), View.WRONG_SECOND_INPUT_DATA));
 
         messageModel.createFinalMessage();
 
