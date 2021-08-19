@@ -25,7 +25,7 @@ public class MessageController {
         messageModel.setSecondInputValue(
                 stringValidScanner(scanner, SECOND_NEEDED_WORD, View.WRONG_SECOND_INPUT_DATA));
 
-        messageModel.setFinalMessage(messageModel.getFirstInputValue() + " " + messageModel.getSecondInputValue());
+        messageModel.createFinalMessage();
 
         view.printMessage(messageModel.getFinalMessage());
 

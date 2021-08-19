@@ -25,6 +25,10 @@ public class MessageModel {
         return finalMessage;
     }
 
+    public void createFinalMessage(){
+        finalMessage = firstInputValue + " " + secondInputValue;
+    }
+
     public void setFinalMessage(String finalMessage) {
         this.finalMessage = finalMessage;
     }
