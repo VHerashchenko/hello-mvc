@@ -5,14 +5,6 @@ public class MessageModel {
     private String secondInputValue;
     private String finalMessage;
 
-    public String getFirstInputValue(){
-        return firstInputValue;
-    }
-
-    public String getSecondInputValue(){
-        return secondInputValue;
-    }
-
     public void setFirstInputValue(String firstInputValue) {
         this.firstInputValue = firstInputValue;
     }
@@ -27,9 +19,5 @@ public class MessageModel {
 
     public void createFinalMessage(){
         finalMessage = firstInputValue + " " + secondInputValue;
-    }
-
-    public void setFinalMessage(String finalMessage) {
-        this.finalMessage = finalMessage;
     }
 }
